@@ -498,7 +498,7 @@ var RandomLevel = function () {
 
 
 
-        progress.string = "Raising..";
+        progress.string = "Wat Da Hell";
 
         var distort = new Distort(new PerlinNoise(this.random, 8), new PerlinNoise(this.random, 8));
         var distort1 = new Distort(new PerlinNoise(this.random, 8), new PerlinNoise(this.random, 8));
@@ -535,7 +535,7 @@ var RandomLevel = function () {
         }
 
 
-        progress.string = "Eroding..";
+        progress.string = "Spawning AmonGUS";
         //this.progressRenderer.progressStage("Eroding..");
         var aint1 = aint;
 
@@ -564,7 +564,7 @@ var RandomLevel = function () {
         }
 
 
-        progress.string = "Soiling..";
+        progress.string = "Planting things";
         //this.progressRenderer.progressStage("Soiling..");
         aint1 = aint;
         var j2 = this.xSize;
@@ -604,7 +604,7 @@ var RandomLevel = function () {
         }
 
 
-        progress.string = "Carving..";
+        progress.string = "Scratching";
         //this.progressRenderer.progressStage("Carving..");
 
         k2 = this.xSize;
@@ -667,7 +667,7 @@ var RandomLevel = function () {
         this.placeOre(19, 70, 2, 4); // iron
         this.placeOre(18, 50, 3, 4); // gold
 
-        progress.string = "Watering..";
+        progress.string = "Poring lava!";
         //this.progressRenderer.progressStage("Watering..");
         //long i5 = System.nanoTime();
         var i5 = random.nextFloat();//Math.random();
@@ -678,8 +678,8 @@ var RandomLevel = function () {
 
         // hack for floodfill to work...
         var extray = 64-35;
-        if(xSize >= 256) extray = 128-36;
-        if(xSize >= 512) extray = 256-37;
+        if(xSize >= 256) extray = 1000-36;
+        if(xSize >= 512) extray = 2560-37;
 
         //console.log(ySize / 2 - 1)
 
@@ -702,7 +702,7 @@ var RandomLevel = function () {
             }
 
             i2 = random.nextInt(xSize);
-            l2 = ySize / 2 - 1 - random.nextInt(3) + extray;
+            l2 = ySize / 2 - 1 - random.nextInt(4) + extray;
             i3 = random.nextInt(zSize);
             if (this.tiles[(l2 * zSize + i3) * xSize + i2] == 0) {
                 j5 += this.floodFill(i2, l2, i3, 0, l);
@@ -712,13 +712,13 @@ var RandomLevel = function () {
         progress.percent = 100;
         self.postMessage(progress);
 
-        progress.string = "Melting..";
+        progress.string = "HELP MEH";
         //this.progressRenderer.progressStage("Melting..");
         this.melt();
-        progress.string = "Growing..";
+        progress.string = "Dying..";
         //this.progressRenderer.progressStage("Growing..");
         this.grow(aint);
-        progress.string = "Planting..";
+        progress.string = "Pooping..";
         //this.progressRenderer.progressStage("Planting..");
         this.plant(aint);
 
