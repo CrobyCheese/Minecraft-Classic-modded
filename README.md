@@ -11,6 +11,6 @@ But I will make you client for all your griefing needs
 if you ask me in this mc classic modding discord:
 https://discord.gg/BDvSnauqsk
 
-#Credits
+# Credits
 This mod is made by CrobyCheese
 https://www.youtube.com/watch?v=Ofnri-XuKsQ&lc=UgzyF0_3_POxEvjjjZd4AaABAg
